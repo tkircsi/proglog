@@ -9,10 +9,9 @@ import (
 )
 
 func TestIndex(t *testing.T) {
-	//f, err := ioutil.TempFile(os.TempDir(), "index_test")
-	f, err := ioutil.TempFile("/Users/tibcsi/Workspace/go/distributed-systems/proglog", "index_test")
+	f, err := ioutil.TempFile(os.TempDir(), "index_test")
 	require.NoError(t, err)
-	//defer os.Remove(f.Name())
+	defer os.Remove(f.Name())
 
 	c := Config{}
 	c.Segment.MaxIndexBytes = 1024
