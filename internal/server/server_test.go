@@ -35,7 +35,7 @@ func TestServer(t *testing.T) {
 func setupTest(t *testing.T, fn func(*Config)) (client api.LogClient, cfg *Config, teardown func()) {
 	t.Helper()
 
-	l, err := net.Listen("tcp", "127.0.0.1:0")
+	l, err := net.Listen("tcp", "localhost:0")
 	require.NoError(t, err)
 
 	// Client setup without TLS
