@@ -1,0 +1,17 @@
+{
+  "CN": "client",
+  "hosts": [""],
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "HU",
+      "L": "HU",
+      "ST": "Budapest",
+      "O": "ProgLog Company",
+      "OU": "Distributed Services"
+    }
+  ]
+}
