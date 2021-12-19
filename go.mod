@@ -3,7 +3,9 @@ module github.com/tkircsi/proglog
 go 1.16
 
 require (
+	github.com/casbin/casbin v1.9.1
 	github.com/gorilla/mux v1.8.0
+	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/stretchr/testify v1.7.0
 	github.com/tysonmote/gommap v0.0.1
 	google.golang.org/genproto v0.0.0-20211208223120-3a66f561d7aa
