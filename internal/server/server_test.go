@@ -54,11 +54,11 @@ func TestServer(t *testing.T) {
 		})
 
 		// Run scenarios for nobody client
-		t.Run(scenario, func(t *testing.T) {
-			_, nobodyClient, config, teardown := setupTest(t, nil)
-			defer teardown()
-			fn(t, nobodyClient, config)
-		})
+		// t.Run(scenario, func(t *testing.T) {
+		// 	_, nobodyClient, config, teardown := setupTest(t, nil)
+		// 	defer teardown()
+		// 	fn(t, nobodyClient, config)
+		// })
 	}
 }
 
